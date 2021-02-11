@@ -40,6 +40,7 @@ class DeviceController {
 
   async getAll(req, res) {
     const {brandId, typeId, limit, page} = req.query
+    console.log('brandId, typeId, limit, page: ', brandId, typeId, limit, page)
     //страница (по умолчанию 1)
     page = page || 1
     //количество записей (по умолчанию 9)
