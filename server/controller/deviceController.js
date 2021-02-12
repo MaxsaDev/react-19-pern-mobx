@@ -39,12 +39,14 @@ class DeviceController {
   }
 
   async getAll(req, res) {
-    const {brandId, typeId, limit, page} = req.query
-    console.log('brandId, typeId, limit, page: ', brandId, typeId, limit, page)
+    let {brandId, typeId, limit, page} = req.query
+
     //страница (по умолчанию 1)
     page = page || 1
     //количество записей (по умолчанию 9)
     limit = limit || 9
+
+    console.log('brandId, typeId, limit, page: ', brandId, typeId, limit, page)
     //отступ, например страница 10 * 9 = 90 - 9 = 81
     let offset = page * limit - limit
     let devices
