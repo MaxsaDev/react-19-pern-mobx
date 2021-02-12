@@ -4,6 +4,7 @@ react-router-dom - для постраничной навигации
 mobx - стейт менеджер
 mobx-react-lite - для того, чтобы связать mobx с функциональными компоненитами React
 react-bootstrap bootstrap
+jwt-decode - с его помощью ты можем распарсить jwt-token
 */
 /*
 store - хранение данных mobx

@@ -2,24 +2,9 @@ import {makeAutoObservable} from "mobx";
 
 export default class DeviceStore {
   constructor() {
-    this._types = [
-      {"id": 1, "name": "Холодильники"},
-      {"id": 2, "name": "Смартфоны"},
-      {"id": 3, "name": "Ноутбуки"},
-      {"id": 4, "name": "Телевизоры"},
-    ]
-    this._brands = [
-      {"id": 1, "name": "Apple"},
-      {"id": 2, "name": "Samsung"},
-      {"id": 3, "name": "Lenovo"},
-      {"id": 4, "name": "Asus"}
-    ]
-    this._devices = [
-      {"id": 1,"name": "12 pro max","price": 1500,"rating": 0,"img": "91727b2d-b2af-4cbb-8e7b-5c04868ccb41.jpg","typeId": 1,"brandId": 1,"info": []},
-      {"id": 2,"name": "12 pro","price": 1000,"rating": 0,"img": "fd0cfa55-edd2-4893-a939-7a2694416148.jpg","typeId": 1,"brandId": 1,"info": []},
-      {"id": 3,"name": "s10","price": 500,"rating": 0,"img": "4ff7a460-1879-460d-bd7e-fa5ca612fd05.jpg","typeId": 1,"brandId": 2,"info": []},
-      {"id": 4,"name": "tu700","price": 300,"rating": 0,"img": "196ee556-65db-4196-a6c9-6c6f73d87a84.jpg","typeId": 2,"brandId": 2,"info": []}
-    ]
+    this._types = []
+    this._brands = []
+    this._devices = []
 
     this._selectedType = {}
     this._selectedBrand = {}
